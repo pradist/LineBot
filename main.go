@@ -60,6 +60,7 @@ func main() {
 	e.POST("/webhook", func(c echo.Context) error {
 
 		Line := new(LineMessage)
+		fmt.Printf("message: %v", Line)
 		if err := c.Bind(Line); err != nil {
 			log.Println("err", err)
 			return c.String(http.StatusOK, "error")
