@@ -1,4 +1,4 @@
-module linebot
+module github.com/pradist/linebot
 
 go 1.15
 
